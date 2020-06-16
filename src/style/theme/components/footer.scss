@@ -1,0 +1,32 @@
+footer {
+  background-color: #f9f9f9;
+  color: #c1ccd2;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 10px;
+      a {
+        color: #aab4d4;
+        &:hover {
+          color: #7c849a;
+        }
+      }
+    }
+  }
+  h5 {
+    color: #7c849a;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .spacer {
+    margin-top: 50px;
+  }
+  .social-icons {
+    ul li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+}

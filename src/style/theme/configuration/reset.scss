@@ -1,0 +1,72 @@
+body {
+//   font-family: "Raleway", sans-serif;
+  font-family: 'Cabin', sans-serif;
+}
+
+h3 {
+  font-size: $font-large;
+}
+
+select,
+option,
+h4,
+h5 {
+  font-size: $font-medium;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.btn,
+button,
+span,
+p,
+a,
+label,
+h6 {
+  font-size: $font-small;
+}
+
+#main {
+  display: flex;
+  @media screen and (max-width: 1024px) {
+    display: block;
+    padding-top: 75px;
+  }
+  #sidebar {
+    width: 300px;
+    @media screen and (max-width: 1024px) {
+      display: block;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      z-index: 2;
+      transition: left 0.3s ease-in-out;
+      &.active {
+        transition: left 0.3s ease-in-out;
+        left: 0;
+      }
+    }
+  }
+  #right-section {
+    width: 100%;
+  }
+}
+
+.mobile-header {
+  position: fixed;
+  width: 100%;
+  background-color: #333f65;
+  top: -50%;
+  left: 0;
+  padding: 15px;
+  transition: top 0.3s ease-in-out;
+  z-index: 1;
+  @media screen and (max-width: 1024px) {
+    transition: top 0.3s ease-in-out;
+    top: 0;
+  }
+}

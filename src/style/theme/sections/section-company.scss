@@ -1,0 +1,67 @@
+.section-company {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  .comp-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+    img {
+      height: 70px;
+      margin-bottom: 10px;
+      margin-right: 25px;
+      @media screen and (max-width: 767px) {
+        margin: 0 auto 15px;
+        display: block;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    color: #7688bc;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  p {
+    color: $grey;
+    font-weight: 500;
+    width: 70%;
+  }
+
+  .map {
+    background-image: url("../assets/images/comp-map.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    flex-grow: 1;
+  }
+}
+
+.lable {
+  @extend .btn;
+  border-color: transparent;
+  color: #fff;
+  display: inline-block;
+  margin-right: 12px;
+  padding: 3px 11px;
+  font-size: 12px;
+  &.follow {
+    background-color: #f4f4f4;
+    color: #8c9ac6;
+    margin-left: 20px;
+    padding: 4px 15px;
+    font-weight: 600;
+  }
+  &.fav {
+    background-color: transparent;
+    border-color: $green;
+    color: $green;
+    padding: 4px 16px;
+    font-weight: 500;
+  }
+}

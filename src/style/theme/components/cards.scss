@@ -1,0 +1,122 @@
+.item {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 10px -10px #000;
+
+  .program {
+    margin: 20px 0;
+    .program__image__img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      margin-right: 20px;
+    }
+    .program__details {
+      h4 {
+        font-size: 18px;
+        color: #758198;
+        line-height: 24px;
+        font-weight: 700;
+      }
+    }
+    .spacer {
+      margin-bottom: 20px;
+    }
+  }
+  .card {
+    background-color: transparent;
+    border: none;
+    h5 {
+      color: #7f8a9c;
+    }
+    .card-body {
+      min-height: 75px;
+      padding: 0;
+    }
+    .card-title {
+      color: #d0d5df;
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
+    .card__left {
+      .progress {
+        height: 5px;
+        background-color: #cfe6b0;
+        margin-top: 6px;
+        .progress-bar {
+          background-color: #5cc560;
+        }
+      }
+    }
+    .card__right {
+      .card-img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        margin-right: 20px;
+        border: solid 1px white;
+        margin-top: 5px;
+        &.over {
+          margin-left: -35px;
+        }
+        &.solid-cirle {
+          background-color: #f3f5f5;
+          padding: 10px 8px;
+          color: #b3bdc5;
+          font-size: $font-small;
+          height: 40px;
+          width: 40px;
+          display: inline-block;
+          transform: translateY(5px);
+        }
+      }
+    }
+    p {
+      margin: 0;
+      margin: 0;
+      color: #758198;
+      font-weight: 700;
+    }
+    .card-footer {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      margin-top: 20px;
+    }
+    .icon {
+      width: 18px;
+      margin-bottom: 5px;
+      margin-right: 5px;
+    }
+  }
+  p {
+    color: #c8cdd6;
+    margin-bottom: 35px;
+    line-height: 28px;
+  }
+  .footer-small{
+    color: #c8cdd6;
+    margin-bottom: 35px;
+    line-height: 28px;
+    font-size: 18px;
+    @media screen and(max-width: 767px){
+      font-size: 12px;
+    }
+  }
+}
+
+
+@media screen and(max-width: 1300px) and (min-width: 992px){
+
+  .card{
+    &.progress-card{
+      .card__left{
+        width: 40%;
+      }
+    }
+  }
+  .item .footer-small {
+    font-size: 12px;
+}
+}

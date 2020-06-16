@@ -1,0 +1,51 @@
+.psudo__purplr-light {
+  &::before {
+    background-color: $purple-light !important;
+  }
+}
+.psudo__cyan {
+  &::before {
+    background-color: $cyan !important;
+  }
+}
+.psudo__purple {
+  &::before {
+    background-color: $purple !important;
+  }
+}
+
+.btn {
+  border: 1px solid $green;
+  color: $grey;
+  background: none;
+  border-radius: 24px;
+  padding: 5px 25px;
+  font-size: $font-small;
+}
+
+.border-green {
+  border-color: $green;
+}
+
+.color-green {
+  color: $green;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-gold {
+  background-color: $label-gold;
+}
+.bg-purple {
+  background-color: $label-purple;
+}
+.bg-green {
+  background-color: $label-green;
+}
+.bg-pink {
+  background-color: $label-pink;
+}
+
+

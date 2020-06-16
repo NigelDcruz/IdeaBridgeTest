@@ -1,0 +1,133 @@
+#sidebar {
+  background-color: $sidebar-background;
+
+  .container--logo {
+    background-color: #3d4a74;
+    height: 70px;
+    @media screen and (max-width:767px){
+      height: 55px;
+    }
+  }
+
+  h1 {
+    font-size: $font-large;
+    color: #fff;
+    span {
+      color: #95a7bf;
+    }
+  }
+
+
+
+  ul {
+    margin-top: 12px;
+  }
+
+  .nav-item {
+    position: relative;
+    padding-left: 35px;
+  }
+
+  .nav-link {
+    padding-left: 30px;
+    font-weight: 500;
+    color: #a0add0;
+    transition: color 0.3s ease-in;
+    &:hover,
+    &:active,
+    &:focus {
+      transition: color 0.3s ease-in;
+      cursor: pointer;
+      color: $green;
+      & + span{
+        background-image: url("../assets/images/nav-icons-hover.png");
+      }
+    }
+  }
+
+  ul.navigation--second {
+    .nav-link {
+      color: #606e9b;
+      transition: color 0.3s ease-in;
+      position: relative;
+      display: inline-block;
+      &:hover,
+      &:active,
+      &:focus {
+        transition: color 0.3s ease-in;
+        cursor: pointer;
+        color: #a0add0;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        height: 8px;
+        width: 8px;
+        background-color: #000;
+        position: absolute;
+        top: 15px;
+        left: 4px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.nav-icon {
+  background-image: url("../assets/images/nav-icons.png");
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: 35px;
+  top: 12px;
+  background-repeat: no-repeat;
+  background-size: 225px;
+
+  &.dashboard {
+    background-position: 0px 0px;
+  }
+  &.Profile {
+    background-position: -23px -2px;
+  }
+  &.Courses {
+    background-position: -42px 0px;
+  }
+  &.Applications {
+    background-position: -64px 0px;
+  }
+  &.Students {
+    background-position: -83px 0px;
+  }
+  &.Graduation {
+    background-position: -109px 0px;
+  }
+  &.Email {
+    background-position: -122px 0px;
+    background-size: 208px;
+    width: 18px;
+  }
+  &.Analytics{
+    background-position: -160px 0px;
+  }
+  &.My-Works{
+    background-position: -185px 0px;
+  }
+  &.Invites{
+    background-position: -185px 0px;
+  }
+  &.Setting{
+    background-position: -210px 0px;
+  }
+}
+
+
+.logo {
+  display: inline-block;
+  background-image: url("../assets/images/logo.svg");
+  height: 30px;
+  width: 200px;
+  background-size: cover;
+  margin-right: 8px;
+}
